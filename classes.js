@@ -30,3 +30,14 @@ class Carro {
     }
 }
 const carro = new Carro("Chevrolet", "Opala", 250);
+class Camaro extends Carro {
+    constructor() {
+        super("Chevrolet", "Camaro", 500);
+        this.turbo = false;
+    }
+    ligarTurbo() {
+        this.turbo = true;
+    }
+}
+const camaro = new Camaro();
+camaro.ligarTurbo();
